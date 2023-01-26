@@ -1,0 +1,10 @@
+mkdir /var/lib
+mkdir /var/lib/nPulse
+mkdir /var/lib/nPulse/trackit-portguard
+
+cp -f ./lib/debian.32 /var/lib/nPulse/trackit-portguard/trackit-portguard
+cp -f ./trackit.init.debian /etc/init.d/trackit-portguard
+
+cd /var/lib/nPulse/trackit-portguard/
+/var/lib/nPulse/trackit-client/trackit-portguard
+update-rc.d trackit-portguard defaults

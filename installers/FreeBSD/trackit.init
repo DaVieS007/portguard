@@ -1,0 +1,38 @@
+#!/bin/sh
+#
+# $FreeBSD: 2023-01-22
+#
+
+# PROVIDE: trackit-portguard
+# REQUIRE: LOGIN
+# BEFORE: mail
+# KEYWORD: shutdown
+
+#
+# Add the following lines to /etc/rc.conf to enable trackit-client:
+#
+# trackit_portguard_enable="YES"
+# 
+#
+
+. /etc/rc.subr
+
+name=trackit_portguard
+rcvar=trackit_portguard_enable
+
+# read settings, set default values
+load_rc_config "$name"
+
+: ${trackit_portguard_enable:=NO}
+
+command=/var/lib/nPulse/trackit-portguard/trackit-portguard
+#procname=/var/lib/nPulse/trackit-portguard/trackit-portguard
+required_dirs=/var/lib/nPulse/trackit-portguard
+required_files=/var/lib/nPulse/trackit-portguard/trackit-portguard
+start_cmd="$command --daemon /var/lib/nPulse/trackit-portguard /var/run/trackit-portguard.pid"
+
+start_precmd=
+reload_cmd=
+pidfile=/var/run/trackit-portguard.pid
+
+run_rc_command "$1"

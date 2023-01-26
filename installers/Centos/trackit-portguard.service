@@ -1,0 +1,18 @@
+[Unit]
+Description=Trackit-Portguard Service
+After=network.target
+
+[Service]
+Type=simple
+PIDFile=/run/trackit-portguard.pid
+ExecStartPre=/usr/bin/rm -f /run/trackit-portguard.pid
+ExecStartPre=
+ExecStart=/var/lib/nPulse/trackit-portguard/trackit-portgaurd --no-daemon /var/lib/nPulse/trackit-portguard /run/trackit-portguard.pid
+ExecReload=
+KillSignal=SIGQUIT
+TimeoutStopSec=5
+KillMode=mixed
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
