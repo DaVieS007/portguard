@@ -6,5 +6,5 @@ cp -f ./lib/debian.32 /var/lib/nPulse/trackit-portguard/trackit-portguard
 cp -f ./trackit.init.debian /etc/init.d/trackit-portguard
 
 cd /var/lib/nPulse/trackit-portguard/
-/var/lib/nPulse/trackit-client/trackit-portguard
+/var/lib/nPulse/trackit-portguard/trackit-portguard
 update-rc.d trackit-portguard defaults

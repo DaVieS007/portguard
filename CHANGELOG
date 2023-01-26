@@ -1,4 +1,5 @@
 v1.0
+2023.01.26: Fixed config ssl option true to yes
 2023.01.26: Fixed automated build system missing windows declaration, software stalling on wait signal from setuid(), but windows does not have setuid
 2023.01.26: Fixed session duration showing 0 minutes
 2023.01.26: Fixed automed build system triple slash issue, webdata was at invalid location
