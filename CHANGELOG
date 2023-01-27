@@ -1,4 +1,8 @@
-v1.0
+v1.0.2
+2023.01.27: Added unauth destinations
+2023.01.27: Simplified config file
+
+v1.0.0
 2023.01.26: Fixed config ssl option true to yes
 2023.01.26: Fixed automated build system missing windows declaration, software stalling on wait signal from setuid(), but windows does not have setuid
 2023.01.26: Fixed session duration showing 0 minutes
