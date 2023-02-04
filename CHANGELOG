@@ -1,3 +1,11 @@
+v1.0.6
+2023.02.02: Network Code Optimisations, less CPU better throughput
+2023.02.02: Fixed Error `The index 'B04BB5-12' does not exist at utils/connectionManager.class.c(270)`
+
+v1.0.4
+2023.01.27: Added possibility to allow TLS on nonTLS sessions
+2023.01.27: Tweaks
+
 v1.0.2
 2023.01.27: Added unauth destinations
 2023.01.27: Simplified config file
