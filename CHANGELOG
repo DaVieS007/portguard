@@ -1,3 +1,7 @@
+v1.0.8
+2023.02.18: Fix error on invalid http arguments
+2023.02.18: Fix null on URL
+
 v1.0.6
 2023.02.02: Network Code Optimisations, less CPU better throughput
 2023.02.02: Fixed Error `The index 'B04BB5-12' does not exist at utils/connectionManager.class.c(270)`
